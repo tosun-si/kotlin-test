@@ -8,7 +8,7 @@ import kotlin.collections.ArrayList
  */
 class Validator<T>(val genericObject: T) {
 
-    private val errors: MutableList<String> = ArrayList()
+    private val errors: MutableList<String> = ArrayList<String>()
 
     companion object ValidatorObject {
         fun <T> of(genericObject: T): Validator<T> = Validator(genericObject!!)
